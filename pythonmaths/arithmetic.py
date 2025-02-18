@@ -51,6 +51,10 @@ def divide(x: int | float, y: int | float) -> float:
         5.0
     >>> arithmetic.divide(5, 2)
         2.5
+    >>> arithmetic.divide(3, 0)
+        You can not divide by 0, please choose another value for 'y'.
+    >>> arithmetic.divide(1, 0.1)
+        10
     """
     try:
         return x / y
